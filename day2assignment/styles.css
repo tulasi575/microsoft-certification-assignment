@@ -1,0 +1,24 @@
+.leftdiv
+{
+	background: green;
+	float: left;
+}
+.middlediv
+{
+	background: gray;
+	float: left;
+}
+.rightdiv
+{
+	background: green;
+	float: left;
+}
+ div
+		 {
+		 	padding: 5%;
+		 	width: 20%;
+		 	background: greenyellow;
+		 	color: orange;
+		 	border: solid black;
+
+		 }

@@ -1,0 +1,21 @@
+<!--  create a button when you click on the button some portion of paragraph is updated-->
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>button demo</title>
+	</head>
+	<body>
+	    <h2>hello tulasi</h2>
+	    <p><span id="t1" style="background-color: gray;">its my</span>birthday</p>
+	    <button  type="button" onclick="changetext()">
+	    	click button
+	    </button>
+	    <script>
+	    	function changetext() {
+	    		document.getElementById("t1").innerHTML="its not my";
+	    	}
+	    </script>
+
+	</body>
+	</html>
