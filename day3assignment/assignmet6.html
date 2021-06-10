@@ -1,0 +1,45 @@
+<!--create an input name that reads the name,aadhar,address and display it in the table format-->
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>box</title>
+	</head>
+	<body>
+		<form>
+		<fieldset>
+			<legend>details</legend>
+			<label for="fname">name:</label>
+			<input type="text" id="fname" name="fname"><br/><br/>
+			<label for="aadhar">aadhar number:</label>
+			<input type="number" id="aadhar" name="aadhar"><br/><br/>
+			<label for="address">adress:</label>
+			<input type="text" id="address" name="address"><br/><br/>
+			<button onclick="readdata()">submit</button>
+		</fieldset>
+		</form>
+		<script>
+			function readdata()
+			{
+				alert('data entered');
+			}
+		</script>
+		</fieldset>
+		<table border='2'>
+			<tr>
+				<td>name</td>
+				<td>aadhar number</td>
+				<td>address</td>
+			</tr>	
+			<tr>
+			   <td id="name">yet to be realeased</td>
+			   <td id="aadhar number">yet to be released</td>
+			   <td	id="address">yet to be realesed</td>
+			</tr>
+		</table>
+
+
+		
+	
+	</body>
+	</html>

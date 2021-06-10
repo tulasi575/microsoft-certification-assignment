@@ -1,0 +1,47 @@
+<!DOCTYPE>
+<html>
+<head>
+	<title>Radiobutton</title>
+</head>
+<body>
+	<form>
+		<p>Select your fav place</p>
+		<input type="radio" id="abroad" value="abroad" name="place"/>abroad
+		<input type="radio" id="India" value="India" name="place"/>India<br/>
+		<label>Pick your fav dish</label><br/>
+		<input type="checkbox" name="nonveg" id="nonveg"/>nonveg<br/>
+		<input type="checkbox" name="veg" id="veg"/>veg<br/>
+		
+	</form>
+	<button onclick="submit()">click me</button>
+	<p id="place"></p><p>your favorite dish is</p>
+	<p id="result"></p>
+	<script>
+		function submit()
+		{
+			if(document.getElementById('abroad').checked==true) {
+				document.getElementById('place').innerHTML='abroad';
+			} else if(document.getElementById('India').checked==true) {
+				document.getElementById('place').innerHTML='India';
+			}
+			
+			if(nonveg.checked==true&&veg.checked==true)
+			{
+				res='nonveg,veg';
+			}
+			else if(nonveg.checked==true&&veg.checked==false)
+			{
+				res='nonveg';
+			}
+			else if(nonnveg.checked==false &&veg.checked==true){
+				res='veg';
+			}
+			else 
+			{
+				res='none';
+			}
+			document.getElementById('result').innerHTML=res;
+		}
+	</script>
+</body>
+</html>
