@@ -1,0 +1,28 @@
+<!--create a simple subscription form which collects email id and store it in data base using html and php-->
+<!-- Contact Form -->
+
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Contact Form</title>
+	</head>
+	<body>
+		<h1>Contact Form</h1>
+		<form action="/webdev/reg/db_api.php" method="POST" target="_blank">
+			<label for="emailid" style="color:red">Enter your email id: </label>
+			<input type="email" id="emailid" name="emailid" />
+			<input type="submit"/>
+			<script>
+				function readData() {
+
+					
+					var email=document.getElementById('emailid').value;
+					
+					var dataString='email:'+email
+
+					document.getElementById('result').innerHTML=dataString;
+				}
+			</script>
+	</body>
+</html> 
