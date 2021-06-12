@@ -1,0 +1,28 @@
+<!--Create paragraphs in the div tag and demonstrate general sibling css selector, highlight the paragraphs respectively.-->
+	<!DOCTYPE html>
+	<html>
+	<head>
+		<meta charset="utf-8">
+		<title>general sibling</title>
+		<style>
+		div ~p 
+		{
+			color: indianred;
+		}
+	</style>
+	</head>
+	<body>
+		<h1>General Sibiling Demo</h1>
+		<p>This is it</p>
+		<div>
+			<p>This is Paragraph1 in div</p>
+			<p>This is Paragraph2 in div</p>
+		</div>
+		<p>This is Paragraph3 after div</p>
+		<code>
+			<h3>Hello World</h3>
+		</code>
+		<p>This is Paragraph4 after div</p>
+	
+	</body>
+	</html>
